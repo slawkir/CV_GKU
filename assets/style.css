@@ -1,0 +1,106 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Public Sans', sans-serif; */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: red solid 2px;
+}
+header {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.logo {
+  width: 53px;
+  height: 53px;
+  background-image: url("./images/Logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 58px;
+}
+nav {
+  width: 445.46px;
+  margin-right: 117px;
+}
+nav > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 53.49px;
+}
+li {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a {
+  color: #606060;
+}
+
+.search-box {
+  background: lightgray;
+  border-radius: 20px;
+  height: 57px;
+  width: 348.45px;
+  position: relative;
+  outline: none;
+}
+.search-text {
+  background: lightgray;
+  border-radius: 20px;
+  height: 57px;
+  width: 348.45px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border: lightslategray;
+}
+.search-button {
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url('./images/loupe.png');
+  top: 18px;
+  left: 18px;
+}
+.call-back {
+  margin-left: 30px;
+  display: block;
+  background: #141416;
+  width: 199.52px;
+  height: 57px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 16px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16.17px;
+  line-height: 24.26px;
+  text-transform: uppercase;
+}
