@@ -278,8 +278,14 @@ a {
   line-height: 45.5px;
 }
 .projects__container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+.projects__item {
+  width: 204.36px;
+  height: 292.43px;
+  background: #fff;
 }
 /*+++++++++++++++++ achievements +++++++++++++++*/
 
