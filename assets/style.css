@@ -13,6 +13,9 @@ li {
 }
 a {
   text-decoration: none;
+  width: max-content;
+  display: inline-block;
+  word-wrap: break-word;
 }
 .container {
   margin: 0 auto;
@@ -56,11 +59,12 @@ li {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  text-transform: uppercase;
+  text-transform: none;
   text-decoration: none;
 }
 a {
   color: #606060;
+  text-transform: none;
 }
 
 .search-box {
@@ -114,14 +118,14 @@ a {
   height: 1599px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   padding-top: 64px;
-  padding-left: 58px;
-  padding-right: 58px;
+  /* padding-left: 58px;
+  padding-right: 58px; */
 }
 .profile__background {
   width: 1354px;
-  margin-left: 33px;
+  margin-left: 60px;
   /* position: relative; */
 }
 .avatar {
@@ -150,6 +154,9 @@ a {
 .data {
   display: flex;
   flex-direction: row;
+  margin-left: 175px;
+  gap: 80px;
+  /* justify-content:right; */
 }
 .profile__data {
   display: flex;
@@ -182,13 +189,6 @@ a {
 
 }
 
-.achievements {
-  width: 673px;
-  height: 890px;
-  border: red 1px solid;
-  margin-right: 0;
-  margin-left: 50px;
-}
 .indicators {
   display: flex;
   align-items: center;
@@ -253,6 +253,36 @@ a {
   gap: 66px;
 }
 
+/*+++++++++++++++++ achievements +++++++++++++++*/
+
+
+.achievements {
+  width: 673px;
+  height: 890px;
+  border: red 1px solid;
+  margin-right: 0;
+  margin-left: 50px;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects__title {
+  display: block;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45.5px;
+}
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*+++++++++++++++++ achievements +++++++++++++++*/
+
 /* footer */
 footer {
   width: 100%;
@@ -280,7 +310,7 @@ footer {
   gap: 49px;
   width: 452.35px;
 }
-.footer__stage1 > li, a {
+.footer__stage1 > li, .footer__stage1 > a {
   font-style: 17.83px;
   width: max-content;
   display: inline-block;
@@ -313,10 +343,6 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-
-
-
-
 
 
 
