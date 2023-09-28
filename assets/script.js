@@ -5,6 +5,9 @@ const btnCallBack = document.querySelector('.call-back');
 const modalSubmit = document.querySelector('.modal-form__item button');
 const btnClose = document.querySelector('.btn-close');
 const btnCloseThanks = document.querySelector('.thanks > .modal-content .btn-close');
+const blockProjects = document.querySelector('.projects'); 
+const blockSkills = document.querySelector('.skills'); 
+
 
 // function
 function showModalCallBack() { 
