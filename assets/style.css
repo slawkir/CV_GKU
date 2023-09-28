@@ -17,6 +17,9 @@ a {
   display: inline-block;
   word-wrap: break-word;
 }
+form, button, a, input {
+  cursor: pointer;
+}
 .container {
   margin: 0 auto;
   max-width: 1440px;
@@ -25,13 +28,14 @@ a {
   align-items: center;
   /* border: red solid 2px; */
   padding-top: 46px;
+  background: #F9F9F9;
 }
 header {
   height: 58px;
   display: flex;
   align-items: center;
   flex-direction: row;
-  background: #F9F9F9;
+  background: #F9F9F9; 
   width: 1250px;
 }
 .logo {
@@ -110,6 +114,7 @@ a {
   font-size: 16.17px;
   line-height: 24.26px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* ++++++++++++++profile+++++++++++++++++ */
@@ -122,6 +127,7 @@ a {
   padding-top: 64px;
   /* padding-left: 58px;
   padding-right: 58px; */
+  background: #F9F9F9;
 }
 .profile__background {
   width: 1354px;
@@ -268,24 +274,94 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 .projects__title {
   display: block;
-  font-family: 'Outfit', sans-serif; 
+  width: 340px;
+  height: 45px;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700;
+  font-size: 25px;
+  /* line-height: 20px; */
+  color: #141416;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 0;
+  border-bottom: 2px solid;
+  margin-bottom: 86px;
+}
+.show-project {
+  background: #141416;
+  width: 86px;
+  height: 38px;
+  font-family: 'Poppins', sans-serif; 
   font-weight: 600;
-  font-size: 35px;
-  line-height: 45.5px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border-radius: 10px;
+
 }
 .projects__container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  gap: 28px;
 }
 .projects__item {
   width: 204.36px;
   height: 292.43px;
   background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 20px;
+
+
+  box-shadow: 28px 8px 43px 0px #C7C7C799;
+
+}
+.projects__item__bg {
+  width: 184px;
+  height: 184px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+.projects__item__title {
+  display: block;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600;
+  font-size: 15.39px;
+  line-height: 21.55px;
+  margin-bottom: 20px;
+
+}
+.item-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.item__ratio {
+  display: flex;
+  flex-direction: column;
+}
+.item__star {
+  width: 20px;
+}
+.item__point {
+  display: block;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #141416;
+}
+.show-project {
+
 }
 /*+++++++++++++++++ achievements +++++++++++++++*/
 
@@ -354,3 +430,83 @@ footer {
 
 /* footer */
 
+/* ++++++++++++++modal-window */
+.modal-window {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+.modal-content {
+  height: 400px;
+  width: 250px;
+  background: #fff;
+  padding: 80px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.modal-form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.modal-form__item label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+.modal-form__item input {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  height: 30px;
+  color: #606060;
+}
+.modal-form__item button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  background: #141416;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.modal-content img {
+  width: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+.thanks {
+  display: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #141416;
+  
+}
+.thanks > .modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thanks > .modal-content span {
+ display: block;
+}
+.thanks > .modal-content .btn-close {
+ 
+}
+/* -------------modal-window */

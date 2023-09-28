@@ -97,21 +97,106 @@
           <div class="projects">
             <span class="projects__title">Проекты</span>
             <div class="projects__container">
+              
               <div class="projects__item">
-                <img class="projects__item__bg"></img>
-                <span class="projects__item__title">Сайт</span>
+                <img class="projects__item__bg" src="./assets/images/Library.jpg">
+                <span class="projects__item__title">Library</span>
                 <div class="projects__item__wrap">
-                  <div class="item__ratio">
-                    <img src="" alt="" class="item__star">
-                    <span class="item__point"></span>
+                  <div class="item-wrap">
+                    <div class="item__ratio">
+                      <img src="./assets/images/star.svg" alt="" class="item__star">
+                      <span class="item__point">5.0</span>
+                    </div>
+                    <form action="https://rolling-scopes-school.github.io/slawkir-JSFEPRESCHOOL2023Q2/library/">
+                      <input type="submit" value="Смотреть" class="show-project"/>
+                    </form>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="projects__item">
+                <img class="projects__item__bg" src="./assets/images/Drumn-kit.jpg">
+                <span class="projects__item__title">Drumn-Kit</span>
+                <div class="projects__item__wrap">
+                  <div class="item-wrap">
+                    <div class="item__ratio">
+                      <img src="./assets/images/star.svg" alt="" class="item__star">
+                      <span class="item__point">5.0</span>
+                    </div>
+                    <form action="https://competent-archimedes-598214.netlify.app/">
+                      <input type="submit" value="Смотреть" class="show-project"/>
+                    </form>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="projects__item">
+                <img class="projects__item__bg" src="./assets/images/Cars.jpg">
+                <span class="projects__item__title">Cars</span>
+                <div class="projects__item__wrap">
+                  <div class="item-wrap">
+                    <div class="item__ratio">
+                      <img src="./assets/images/star.svg" alt="site" class="item__star">
+                      <span class="item__point">4.5</span>
+                    </div>
+                    <form action="https://slawkir.github.io/landingCars/">
+                      <input type="submit" value="Смотреть" class="show-project"/>
+                    </form>
                   </div>
                 </div>
-                
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+              <div class="projects__item">
+                <img class="projects__item__bg" src="./assets/images/Piano.jpg">
+                <span class="projects__item__title">Virtual piano</span>
+                <div class="projects__item__wrap">
+                  <div class="item-wrap">
+                    <div class="item__ratio">
+                      <img src="./assets/images/star.svg" alt="" class="item__star">
+                      <span class="item__point">3.0</span>
+                    </div>
+                    <form action="https://rolling-scopes-school.github.io/slawkir-JSFE2021Q1/virtual-piano/">
+                      <input type="submit" value="Смотреть" class="show-project"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projects__item">
+                <img class="projects__item__bg" src="./assets/images/Match-game.jpg">
+                <span class="projects__item__title">Match game</span>
+                <div class="projects__item__wrap">
+                  <div class="item-wrap">
+                    <div class="item__ratio">
+                      <img src="./assets/images/star.svg" alt="" class="item__star">
+                      <span class="item__point">3.5</span>
+                    </div>
+                    <form action="https://rolling-scopes-school.github.io/slawkir-JSFE2021Q1/match-game/">
+                      <input type="submit" value="Смотреть" class="show-project"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="projects__item">
+                <img class="projects__item__bg" src="./assets/images/Player.jpg">
+                <span class="projects__item__title">Player</span>
+                <div class="projects__item__wrap">
+                  <div class="item-wrap">
+                    <div class="item__ratio">
+                      <img src="./assets/images/star.svg" alt="" class="item__star">
+                      <span class="item__point">5.0</span>
+                    </div>
+                    <form action="https://slawkir.github.io/audio-player/audio-player/index.html">
+                      <input type="submit" value="Смотреть" class="show-project"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+
+              
       
   </section>
   <footer>
@@ -161,8 +246,35 @@
     </div>
 
   </footer>
+  <div class="modal-window call-back-window">
+    <div class="modal-content">
+      <img src="./assets/images/close.png" alt="close" class="btn-close">
+      <form class="modal-form">
+        <div class="modal-form__item">
+          <label for="user-name">Введите Ваше имя</label>
+          <input type="text" id="user-name">
+        </div>
+        <div class="modal-form__item">
+          <label for="user-tel">Введите Ваш номер телефона</label>
+          <input type="tel" id="user-tel" pattern="[0-9]{11}" required>
+        </div>
+        <div class="modal-form__item">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-window thanks">
+    <div class="modal-content">
+      <img src="./assets/images/close.png" alt="close" class="btn-close">
+      <span>Спасибо за Ваше обращение!!!</span>
+    </div>
+  </div>
   </div>
   <script src="./assets/script.js"></script>
+    
   
+
 </body>
 </html>
