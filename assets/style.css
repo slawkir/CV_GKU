@@ -20,7 +20,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: red solid 2px;
+  /* border: red solid 2px; */
+  padding-top: 46px;
 }
 header {
   height: 58px;
@@ -137,9 +138,117 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: absolute; */
+  position: absolute;
+  top: -140px;
+  left: -10px;
+  /* position: relative; */
+  /* top: -141px; */
+  /* left: -470px; */
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+}
+.profile__data {
+  display: flex;
+  flex-direction: column;
+  width: 363px;
   position: relative;
-  top: -141px;
-  left: -470px;
+}
+.name {
+  border-bottom: #D0D0D0 solid 2px;
+  height: 114px;
+  margin-top: 57px;
+}
+.name-last {
+  display: block;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45.5px;
+}
+.name-nik {
+  display: block;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+.biograph {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.achievements {
+  width: 673px;
+  height: 890px;
+  border: red 1px solid;
+  margin-right: 0;
+  margin-left: 50px;
+}
+.indicators {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+}
+.indicators__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.indicators__item__number {
+  display: block;
+  font-family: 'Public Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 32.15px;
+  line-height: 40.19px;
+  text-align: center;
+}
+.indicators__item__name {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 10.72px;
+  line-height: 16.08px;
+  text-align: center;
+  color: #848586;
+}
+.biograph {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: #D0D0D0 solid 2px;
+}
+
+.biograph__title {
+  display: block;
+  font-family: 'Public Sans', sans-serif; 
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40.19px;
+  text-align: center;
+  color: #C5C5C5;
+}
+.biograph > p {
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24.78px;
+  text-align: center;
+  color: #949494;
+  text-align: start;
+}
+.socialnet {
+  padding-top: 30px;
+}
+.socialnet ul {
+  display: flex;
+  gap: 66px;
 }
 
