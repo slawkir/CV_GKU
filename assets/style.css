@@ -622,12 +622,8 @@ footer {
 @media only screen and (max-width: 900px) {
   .logo{
     display: none;
-    /* visibility: hidden; */
   }
-  .profile {
-    background: red;
-  }
-  
+
 }
 @media only screen and (max-width: 820px) {
   .profile__background {
@@ -636,9 +632,6 @@ footer {
   .logo-footer {
     display: none;
   } 
-  .profile {
-    background: green;
-  }
   .data {
     flex-direction: column;
   }
@@ -654,12 +647,10 @@ footer {
 }
 @media only screen and (max-width: 752px) {
 
- .header-wrapp {
-  padding: 10px 20px;
- }
-  .profile {
-    background: lightblue;
+  .header-wrapp {
+   padding: 10px 20px;
   }
+
   .profile__data {
     margin-top: 100px;
   }
