@@ -30,8 +30,6 @@ form, button, a, input {
   flex-direction: column;
   align-items: center;
   padding-top: 46px;
-  box-shadow: #B9B9B9 10px 10px 10px 10px;
-  /* background: #F9F9F9; */
 }
 .header-wrapp {
   display: flex;
