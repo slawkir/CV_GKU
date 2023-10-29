@@ -36,7 +36,7 @@ form, button, a, input {
   display: flex;
   width: 100%;
   margin: 0;
-  padding:0 90px;
+  padding:20px 90px;
 }
 header {
   display: flex;
@@ -48,6 +48,7 @@ header {
   gap: 10px;
 }
 .logo {
+  display: block;
   width: 53px;
   height: 53px;
   background-image: url("./images/Logo.svg");
@@ -181,7 +182,8 @@ a {
 .data {
   display: flex;
   flex-direction: row;
-  margin-left: 175px;
+  width: 80%;
+  margin: auto;
   gap: 80px;
 }
 .profile__data {
@@ -285,15 +287,18 @@ a {
 .achievements {
   max-width: 673px;
   min-height: 890px;
-  margin-right: 0;
+  /* margin-right: 0;
   margin-left: 50px;
-  margin-right: 20px;
+  margin-right: 20px; */
 }
 /* projects */
 .projects {
-  width: 100%;
+  /* width: 100%; */
   display: none;
   flex-direction: column;
+  /* margin: auto; */
+  align-items: flex-start;
+  
 }
 .achievements__title {
   display: block;
@@ -326,6 +331,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
+  /* align-content: center; */
+  margin: auto;
 }
 .projects__item {
   width: 204.36px;
@@ -607,3 +614,93 @@ footer {
  
 }
 /* -------------modal-window */
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .logo{
+    display: none;
+    /* visibility: hidden; */
+  }
+  .profile {
+    background: red;
+  }
+  
+}
+@media only screen and (max-width: 820px) {
+  .profile__background {
+    display: none;
+  }
+  .logo-footer {
+    display: none;
+  } 
+  .profile {
+    background: green;
+  }
+  .data {
+    flex-direction: column;
+  }
+  .avatar__bg {
+    top: 0;
+    left: 365px;
+  }
+  .biograph > p {
+    height: 100px;
+    overflow: hidden;
+  }
+  
+}
+@media only screen and (max-width: 752px) {
+
+ .header-wrapp {
+  padding: 10px 20px;
+ }
+  .profile {
+    background: lightblue;
+  }
+  .profile__data {
+    margin-top: 100px;
+  }
+  .data {
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  .avatar__bg {
+    top: -140px;
+    left: 50%;
+  }
+  .biograph__title {
+    display: none;
+  }
+  .biograph > p {
+    display: none;
+  }
+
+  .search-box {
+  width: 200px;
+  }
+  .search-text {
+    width: 200px;
+    font-size: 0;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+  nav > ul, .footer__stage1 > ul {
+    flex-wrap: wrap;
+  }
+  .socialnet {
+    display: none;
+  }
+  .projects__item{
+    height: max-content;
+  }
+  .projects__item > img{
+    display: none;
+  }
+  .footer__stage1 {
+    margin-bottom: 20px;
+  }
+}
