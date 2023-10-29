@@ -30,7 +30,8 @@ form, button, a, input {
   flex-direction: column;
   align-items: center;
   padding-top: 46px;
-  background: #F9F9F9;
+  box-shadow: #B9B9B9 10px 10px 10px 10px;
+  /* background: #F9F9F9; */
 }
 .header-wrapp {
   display: flex;
@@ -176,7 +177,7 @@ a {
   justify-content: center;
   position: absolute;
   top: -32%;
-  left: 10%;
+  left: -10%;
 }
 
 .data {
@@ -456,7 +457,7 @@ footer {
 }
 
 .footer__stage1 {
-  height: 182px;
+  min-height: 182px;
   width: 100%;
   /* padding: ; */
   display: flex;
@@ -697,5 +698,18 @@ footer {
   }
   .footer__stage1 {
     margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer__stage2 {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .footer__stage2 ul {
+  width: 150px;
+  }
+  .avatar__bg {
+    left: 15%;
+    top: -220px;
   }
 }
